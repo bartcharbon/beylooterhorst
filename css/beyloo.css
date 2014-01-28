@@ -1,0 +1,272 @@
+.row {
+	margin-top: 5px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center; /* !!! */
+}
+
+.centered {
+    margin: 0 auto;
+    text-align: left;
+    width: 940px;
+}
+
+#container {
+width: 940px;
+margin: 0 auto;
+text-align: left
+}
+
+.fb-like-box {
+background-color: #fff;
+}
+
+.page-background {
+background-image:url('../images/IMGP3222.JPG');
+margin-left:auto;
+margin-right:auto;
+width:1010px;
+}
+
+.content-header-background { 
+	background-color:#7f0037;
+	border-top-left-radius: 20px 20px;
+	border-top-right-radius: 20px 20px;
+	height: 50px;
+	font-size: 12px;
+	margin-top: 0px;
+}
+
+.content-footer-background       { 
+	background-color:#7f0037;
+	border-bottom-left-radius: 20px 20px;
+	border-bottom-right-radius: 20px 20px;
+	height: 20px;
+	font-size: 15px;
+	font-family:arial;
+}
+
+.content-background  {
+	background-color:#005214;
+}
+
+.content  {
+	color:white;
+	line-height: 20px;
+	font-family:arial;
+}
+
+.content-no-margin  {
+	color:white;
+	margin-left:0px;
+	line-height: 20px;
+	font-family:arial;
+}
+
+.content-margin  {
+	color:white;
+	line-height: 20px;
+	font-family:arial;
+}
+
+.content-header  {
+	color:#e0dd1d;
+	line-height: 47px;
+	font-size: 28px;
+	font-family:arial;
+}
+
+/* menu**/
+.horizontalcssmenu ul{
+margin-left:auto;
+margin-right:auto;
+padding: 0;
+list-style-type: none;
+
+}
+
+/*Top level list items*/
+.horizontalcssmenu ul li{
+position: relative;
+display: inline;
+float: left;
+
+}
+
+/*Top level menu link items style*/
+.horizontalcssmenu ul li a{
+display: block;
+width: 88px; /*Width of top level menu link items*/
+padding: 1px 4px;
+border: 1px solid #202020;
+border-left-width: 0;
+text-decoration: none;
+background: url(../images/menubg.gif) center center repeat-x;
+color: #e0dd1d;
+font: bold 16px Tahoma;
+text-align:center;
+}
+	
+/*Sub level menu*/
+.horizontalcssmenu ul li ul{
+left: 0;
+top: 0;
+border-top: 1px solid #202020;
+position: absolute;
+display: #005214;
+visibility: hidden;
+z-index: 100;
+}
+
+/*Sub level menu list items*/
+.horizontalcssmenu ul li ul li{
+display: inline;
+float: none;
+}
+
+
+/* Sub level menu links style */
+.horizontalcssmenu ul li ul li a{
+width: 90px; /*width of sub menu levels*/
+font-weight: normal;
+color: #005214;
+padding: 2px 5px;
+background: #e0dd1d;
+border-width: 0 1px 1px 1px;
+text-align:left;
+z-index: 100;
+}
+
+.horizontalcssmenu ul li a:hover{
+background: url(../images/menubgover.gif) center center repeat-x;
+}
+
+.horizontalcssmenu ul li ul li a:hover{
+background: #cde686;
+}
+
+* html p#iepara{ /*For a paragraph (if any) that immediately follows menu, add 1em top spacing between the two in IE*/
+padding-top: 1em;
+}
+	
+/* Holly Hack for IE \*/
+* html .horizontalcssmenu ul li { float: left; height: 1%; }
+* html .horizontalcssmenu ul li a { height: 1%; }
+/* End */
+
+#slider {
+    width:696px;
+}
+#slider img{
+    border:none;
+}
+#slider ul, #slider li{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+#slider li { 
+    width:696px;
+    overflow:hidden; 
+}
+
+
+.pwi_loader{
+        height: 60px;
+        width: 200;
+        border: 1px solid #7F7F7F;
+}
+
+.pwi_container{
+        color: #000000;
+        background-color: #005214;
+        font-family: Arial;
+        font-size: 8pt;
+        padding: 5px;
+        width: 790px;
+}
+
+.pwi_container a{
+        color: #005214;
+}
+
+.pwi_album_description{
+        text-align: left;
+        color: #000000;
+        font-family: Arial;
+        font-size: 8pt;
+        background-color: #7F7F7F;
+        padding: 10px;
+
+}
+.pwi_album_description .title{
+        color: #e0dd1d;
+        font-size: 12pt;
+        margin-top: 10px;
+
+}
+.pwi_album_description .details{
+        color: #e0dd1d;
+        font-size: 8pt;
+        font-style: italic;
+}
+.pwi_album_description .description{
+        font-size: 10pt;
+        padding: 5px;
+}
+.pwi_album_description .sslink{
+
+}
+
+.pwi_album{
+        float: left;
+        margin: 1em;
+        text-align: center;
+        color: #e0dd1d;
+        cursor: pointer;
+}
+
+.pwi_album_backlink{
+        text-decoration: underline;
+        cursor: pointer;
+}
+
+.pwi_album img{
+        border: 0px solid #7F7F7F;
+}
+
+.pwi_photo{
+        float: left;
+        margin: 1em;
+        text-align: center;
+        border: 0px dotted white;
+}
+.pwi_photo img{
+        border: 0px solid #7F7F7F;
+}
+
+.pwi_photo a{
+        text-decoration: none;  
+}
+
+.pwi_pager{
+        clear: both;
+}
+.pwi_prevpage, .pwi_nextpage, .pwi_pager_page, .pwi_pager_current{
+        float: left;
+        margin: 5px;
+
+}
+.link{
+        text-decoration: underline;
+        cursor: pointer;
+}
+
+.pwi_pager_current{
+        text-decoration: none;
+        font-weight: bold;
+}
+

@@ -1,0 +1,168 @@
+
+.agendatable, .boldtable TD, .boldtable TH
+{
+	padding: 0px 0px;
+	font-family:arial;
+	font-size:10pt;
+	color:white;
+	background-color:#005214;
+	height:328px;
+	width:400px;
+	border-collapse: collapse;
+	border: 1px;
+}
+
+.linktable, .boldtable TD, .boldtable TH
+{
+	padding: 0px 0px;
+	font-family:arial;
+	font-size:10pt;
+	color:white;
+	background-color:#005214;
+	height:328px;
+	width:200px;
+	border-collapse: collapse;
+	border: 1px;
+}
+
+.facebooktable, .boldtable TD, .boldtable TH
+{
+	padding: 0px 0px;
+	font-family:arial;
+	font-size:10pt;
+	background-color:#ffffff;
+	height:328px;
+	width:395px;
+	border: 5px solid #005214;
+}
+
+.full_width_table, .boldtable TD, .boldtable TH
+{
+	padding: 0px 0px;
+	font-family:arial;
+	font-size:10pt;
+	color:white;
+	background-color:#005214;
+	width:810px;
+	border-collapse: collapse;
+	border: 1px;
+}
+
+.contentpage_table, .boldtable TD, .boldtable TH
+{
+	padding: 5px 50px;
+	font-family:arial;
+	font-size:10pt;
+	color:white;
+	background-color:#005214;
+	width:1010px;	
+}
+
+.contentpage_table a {
+color: e0dd1d;
+}
+
+.hoofd_table, .boldtable TD, .boldtable TH
+{
+	padding: 0px 0px;
+	font-family:arial;
+	border-collapse: collapse;
+	width:1010px;	
+}
+
+.half_width_table, .boldtable TD, .boldtable TH
+{
+	padding: 0px 0px;
+	font-family:arial;
+	font-size:10pt;
+	color:white;
+	background-color:#005214;
+	width:400px;
+	margin: 0 auto;
+	border-collapse: collapse;
+	border: 1px;
+}
+
+.half_width_table1, .boldtable TD, .boldtable TH
+{
+	padding: 0px 0px;
+	font-family:arial;
+	font-size:10pt;
+	color:white;
+	background-color:#005214;
+	width:400px;
+	margin: 0 auto;
+	border-collapse: collapse;
+	border: 1px;
+	height:280px;
+}
+
+.half_width_table2, .boldtable TD, .boldtable TH
+{
+	padding: 0px 0px;
+	font-family:arial;
+	font-size:10pt;
+	color:white;
+	background-color:#005214;
+	width:400px;
+	margin: 0 auto;
+	border-collapse: collapse;
+	border: 1px;
+	height:180px;
+}
+
+
+.diatable, .boldtable TD, .boldtable TH
+{
+	padding: 4px 4px;
+	font-family:arial;
+	font-size:10pt;
+	color:white;
+	height:328px;
+	width:400px;
+}
+
+.fototable, .boldtable TD, .boldtable TH
+{
+	padding: 5px 50px;
+	font-family:arial;
+	font-size:10pt;
+	color:white;
+	background-color:#005214;
+	width:1010px;
+}
+
+.agenda, .boldtable TD, .boldtable TH
+{
+	padding: 5px 50px;
+	font-family:arial;
+	font-size:10pt;
+	color:white;
+	background-color:#005214;
+	width:800px;	
+}
+
+.agenda a {
+color: e0dd1d;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map_canvas {
+  height: 100%;
+}
+
+@media print {
+  html, body {
+    height: auto;
+  }
+
+  #map_canvas {
+    height: 60px;
+    width: 60px;
+  }
+}
