@@ -19,14 +19,17 @@ session_start();
 ob_start();
 
 class core {
-	public static $sHost = 'localhost';
-	public static $sUser = '----------';
-	public static $sPass = '----------';
-	public static $sDb = '----------';
+
 	
 	public static function SQLConnect() {
-		@mysql_connect(self::$sHost, self::$sUser, self::$sPass) or die('Foutmelding: Kan geen verbinding met de database maken!');
-		mysql_select_db(self::$sDb);
+		 $ini_array = parse_ini_file('credentials.ini');
+		 $sHost = 'localhost';
+		 $sUser = $ini_array['db_user'];
+		 $sPass = $ini_array['db_password'];
+		 $sDb =   $ini_array['db_name'];
+	
+		@mysql_connect($sHost, $sUser, $sPass) or die('Foutmelding: Kan geen verbinding met de database maken!');
+		mysql_select_db($sDb);
 	}
 	public static function SQLClose() {
 		mysql_close();

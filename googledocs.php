@@ -15,12 +15,14 @@ require_once 'Zend/Loader/StandardAutoloader.php';
 require_once 'Zend/Gdata/Docs.php';
 require_once 'Zend/Gdata/ClientLogin.php';
 
+$ini_array = parse_ini_file("credentials.ini");
+
 $loader = new Zend\Loader\StandardAutoloader(array('autoregister_zf' => true));
 $loader->register();
 
 
 $service = Zend_Gdata_Docs::AUTH_SERVICE_NAME;
-$client = Zend_Gdata_ClientLogin::getHttpClient("scoutsbeilen@gmail.com", "-----------", $service);
+$client = Zend_Gdata_ClientLogin::getHttpClient("scoutsbeilen@gmail.com", $ini_array['scouts_password'], $service);
 $docs = new Zend_Gdata_Docs($client);
 $feed = $docs->getDocumentListFeed('https://docs.google.com/feeds/documents/private/full/-/website');
 	
