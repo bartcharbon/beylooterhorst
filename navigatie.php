@@ -24,7 +24,6 @@ function toonPagina($subpagina){
 	case "gug":
 		include 'gug.php';
 		break;
-
 	case "links":
 		include 'links.php';
 		break;
@@ -73,19 +72,11 @@ function toonPagina($subpagina){
 	case "stam":
 		include 'stam.php';
 		break;
-	case "ontwikkel":
-		include 'ontwikkel.php';
-		break;
 	case "fotostrips":
 		include 'fotostrip.php';
 		break;
 	case "joti":
 		include 'joti.php';
-		break;
-		case "test":
-				echo"<p><img src=\"images/invisible.png\"width=\"50\"height=\"50\"\">
-		       <iframe src =\"contact3.php\" width=\"884\" height=\"750\" border=\"0\"><p>Your browser does not support iframes.</p></iframe></p>";
-		break;
 		break;
 	case "vertaal":
 		echo"<p><iframe style=\"border:0px\" src =\"/translator.php\" width=\"1286\" height=\"1000\" border=\"0\"><p>Your browser does not support iframes.</p></iframe></p>";
